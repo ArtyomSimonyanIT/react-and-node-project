@@ -1,0 +1,116 @@
+.header{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    box-shadow: 0 4px 12px 0 rgb(0 0 0 / 7%), 0 2px 4px rgb(0 0 0 / 5%);
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.header-div-container-block{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.header-div-container-none{
+    display: none;
+}
+.text{
+    color: #4f4f4f;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.header-div-container1-block{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.header-div-container1-none{
+    width: 25%;
+    height: 100%;
+    text-align: center;
+}
+.mard{
+    font-size: 22px;
+    transition: 1s;
+    color: #4F4F4F;
+}
+.mard:hover{
+    color: rgb(0, 0, 0);
+}
+.register-button{
+    width: 110px;
+    border: none;
+    background-color: #4F4F4F;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    transition: 1s;
+    font-size: 15.4px;
+}
+.register-button:hover{
+    background-color: rgb(0, 0, 0);
+    color: #aaaaaa;
+}
+.text:hover{
+    color: black;
+}
+.spanForNumbers{
+    border-radius: 100%;
+    background-color: rgb(216, 216, 216);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.6%;
+    right: 16.9%;
+    /* height: 40%; */
+    top: 4%;
+    position: absolute;
+}
+.screen-div-none{
+    width: 0px;
+    display: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.screen-div-block{
+    width: 70%;
+    display: none;
+    height: 100%;
+    display: inline-flex;
+    z-index: 1;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.fa-bars{
+    display: none;
+}
+.div-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.display-none{
+    display: none;
+}
+.display-block{
+    display: block;
+}
+.none{
+    display: none;
+}

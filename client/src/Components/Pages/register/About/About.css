@@ -1,0 +1,80 @@
+.about-container{
+    width: 100%;
+    display: flex;
+    background-color: rgb(255, 238, 238);
+    font-family: 'Roboto Mono', monospace;
+    padding-bottom: 70px;
+}
+.about-div-1{
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 10%;
+    padding-bottom: 50px;
+    /* text-align: center; */
+    background-color: rgb(41, 41, 41);   
+    border-radius: 10px;
+}
+.about-h1{
+    text-align: center;
+    margin-top: 5%;
+}
+.about-text{
+    width: 70%;
+    /* text-align: center; */
+    margin: 0 auto;
+    color: aliceblue;
+}
+.div-for-about-text{
+    width: 100%;
+    /* text-align: center; */
+}
+.about-div-2{
+    width: 40%;
+    margin-left: 10%;
+    margin-top: 10%;
+    /* padding-bottom: 50px; */
+    /* text-align: center; */
+    border-radius: 10px;
+    padding: 30px;
+    background-color: rgb(196, 196, 196);
+}
+.delivery-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.delivery-div1{
+    
+    width: 100%;
+    /* text-align: center; */
+    border-radius: 10px;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+}
+.div-for-truck{
+    margin-top: 24%;
+}
+.fa-truck{
+    font-size: 70px;
+    color: rgb(41, 41, 41);
+}
+.fa-address-book{
+    font-size: 70px;
+    color: rgb(41, 41, 41);
+}
+.delivery-div2{
+    width: 100%;
+    /* text-align: center; */
+    border-radius: 10px;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8%;
+}
+.div-for-div1{
+    background-color: rgb(41, 41, 41);   
+    border-radius: 10px;
+    width: 75%;
+}
