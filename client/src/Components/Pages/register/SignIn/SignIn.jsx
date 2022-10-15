@@ -1,6 +1,7 @@
-import "./SignIn.css"
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import "./SignIn.css"
 
 export default function SignIn() {
     const [email, setEmail] = useState('');
@@ -11,10 +12,16 @@ export default function SignIn() {
     const mouseClick = (event) => {
         event.currentTarget.style.border = '1px solid rgb(0, 217, 255)';
     }
+    async function register() {
+        await axios.post(`http://localhost:8000/auth/registration`, {
+            "email": email,
+            "password": password
+        })
+    }
     return (
         <div className="register-container1">
             <div className="user-container">
-            <i className="fa-solid fa-user-large"></i>
+                <i className="fa-solid fa-user-large"></i>
             </div>
             <div className="input-container">
                 <form action="" onSubmit={(e) => {

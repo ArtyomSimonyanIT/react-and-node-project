@@ -4,7 +4,7 @@ const authRouter = require('./routes/authRouter')
 const mysql = require("mysql2");
 const db = require('./db');
 
-const PORT = process.env.port || 5000
+const PORT = process.env.port || 8000
 const app = express();
 
 app.use(express.json())

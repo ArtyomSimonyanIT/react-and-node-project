@@ -15,14 +15,16 @@ class apiController {
         }
     }
 
-
     async delUser(req, res) {
         try {
-            const id = req.params["id"];
-            const sql = "DELETE FROM users WHERE id = ?"
-            db.query(sql, [id], function (err, results) {
-                if (err) console.log(err);
-                else console.log("User deleted");
+            const user_id = req.body.user_id
+            db.query("DELETE FROM users WHERE id=?", [user_id], (err, results) => {
+                if (err) {
+                    console.log(err)
+                }
+                else {
+                    res.send("Пост был удален")
+                }
             })
         } catch (e) {
 
@@ -45,7 +47,7 @@ class apiController {
 
 
 
-    async addComputers (req, res){
+    async addComputers(req, res) {
         try {
             const title = req.body.title;
             const ram = req.body.ram;
@@ -59,13 +61,13 @@ class apiController {
             const img = req.body.img;
             const price = req.body.price;
 
-            const sql = "INSERT INTO posts(title, ram, videocard, processor, motherboard, ssd, psu, computerCase, cooler, img, price) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+            const sql = "INSERT INTO computers(title, ram, videocard, processor, motherboard, ssd, psu, computerCase, cooler, img, price) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
             db.query(sql, [title, ram, videocard, processor, motherboard, ssd, psu, computerCase, cooler, img, price], function (err, results) {
                 if (err) console.log(err);
                 else console.log("Data updated");
             })
-        } catch(e) {
-           
+        } catch (e) {
+
         }
     }
 
@@ -83,8 +85,22 @@ class apiController {
         }
     }
 
+    async delComputer(req, res) {
+        try {
+            const computer_id = req.body.computer_id;
+            db.query("DELETE FROM computers WHERE id=?", [computer_id], (err, results) => {
+                if (err) {
+                    console.log(err)
+                }
+                else {
+                    res.send("Пост был удален")
+                }
+            })
+        } catch (e) {
 
-    
+        }
+    }
+
 
     async getNotebooks(req, res) {
         try {
@@ -101,7 +117,7 @@ class apiController {
 
 
 
-    async addNotebooks (req, res){
+    async addNotebooks(req, res) {
         try {
             const title = req.body.title;
             const ram = req.body.ram;
@@ -113,29 +129,34 @@ class apiController {
             const screenDiagnol = req.body.screenDiagnol;
             const price = req.body.price;
 
-            const sql = "INSERT INTO posts(title, ram, videocard, processor, motherboard, ssd, img, screenDiagnol, price) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+            const sql = "INSERT INTO notebooks(title, ram, videocard, processor, motherboard, ssd, img, screenDiagnol, price) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
             db.query(sql, [title, ram, videocard, processor, motherboard, ssd, screenDiagnol, img, price], function (err, results) {
                 if (err) console.log(err);
                 else console.log("Data updated");
             })
-        } catch(e) {
-           
+        } catch (e) {
+
         }
     }
 
 
-    async delNotebooks(req, res) {
+    async delNotebook(req, res) {
         try {
-            const id = req.params["id"];
-            const sql = "DELETE FROM notebooks WHERE id = ?"
-            db.query(sql, [id], function (err, results) {
-                if (err) console.log(err);
-                else console.log("Computer deleted");
+            const notebook_id = req.body.notebook_id
+            db.query("DELETE FROM notebooks WHERE id=?", [notebook_id], (err, results) => {
+                if (err) {
+                    console.log(err)
+                }
+                else {
+                    res.send("Пост был удален")
+                }
             })
         } catch (e) {
 
         }
     }
 }
+
+
 
 module.exports = new apiController()

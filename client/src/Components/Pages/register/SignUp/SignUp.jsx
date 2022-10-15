@@ -1,7 +1,8 @@
-import "./SignUp.css"
+import axios from "axios";
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"></link>
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import "./SignUp.css";
 
 function SignUp() {
     const [email, setEmail] = useState('');
@@ -12,6 +13,13 @@ function SignUp() {
     }
     const mouseClick = (event) => {
         event.currentTarget.style.border = '1px solid rgb(0, 217, 255)';
+    }
+    async function register() {
+        await axios.post(`http://localhost:8000/auth/registration`,{
+            "email": email,
+            "password": password,
+            "confirmPassword": confirmPassword
+        })
     }
     return (
         <div className="register-container">
@@ -27,10 +35,10 @@ function SignUp() {
                     <input type="email" name="" id="email" className="input-for-register" value={email} onChange={e => setEmail(e.target.value)} onMouseLeave={mouseLeave} onClick={mouseClick}/>
                     <label htmlFor="password" className="label label-top" >Password</label>
                     <input type="password" name="" id="password" className="input-for-register" value={password} onChange={e => setPassword(e.target.value)} onMouseLeave={mouseLeave} onClick={mouseClick} />
-                    <label htmlFor="confirm-password" className="label label-top">Comfirm Password</label>
+                    <label htmlFor="confirm-password" className="label label-top">Confirm Password</label>
                     <input type="password" name="" id="confirm-password" className="input-for-register" value={confirmPassword} onChange={e => setConfirmPassword(e.target.value)} onMouseLeave={mouseLeave} onClick={mouseClick}/>
                     <div className="button-contaier">
-                        <button className="signUp-button" id="open">Sign Up</button>
+                        <button className="signUp-button" id="open" onClick={register}>Sign Up</button>
                         <div className="div-for-span">
                             <span className="sign-in-span">already registered?  <Link to={"../SignIn"} className="sign-in">Sign In</Link></span>
                         </div>

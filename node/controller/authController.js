@@ -20,6 +20,8 @@ class AuthController {
            
         }
     }
+
+
     async login (req, res) {
         try{
           const email = req.body.email;
@@ -28,10 +30,11 @@ class AuthController {
             if(err) console.log(err)
             else{
                 if(dbEmail._rows[0].length == 1) {
-                    if (password === results[0].password) {
+                    if (password == results[0].password) {
                         console.log("вы вошли в аккаунт");
                     }else {
                         console.log("пороль неверный");
+                        console.log(password);
                     }
                 }else {
                     console.log("вы не зарегистрованы");
