@@ -5,7 +5,9 @@ function CardUnique({ computers , cart, addToCart}) {
     return (
         <div className="cardUnique-container">
             <div key={computers[0].id} className="divv">
-                <img src={computers[0].img} alt="" className="card-image" /><div className="cardunique-text">
+                <div className="div-for-image">
+                    <img src={computers[0].img} alt="" className="card-image" /><div className="cardunique-text">
+                </div>
                     <p>{computers[0].title}</p>
                     <p>{computers[0].price}</p> 
                 </div><div className="buttons-div-container">
@@ -14,7 +16,9 @@ function CardUnique({ computers , cart, addToCart}) {
                 </div>
             </div>
             <div key={computers[1].id} className="divv">
-                <img src={computers[1].img} alt="" className="card-image" /><div className="cardunique-text">
+            <div className="div-for-image">
+                    <img src={computers[1].img} alt="" className="card-image" /><div className="cardunique-text">
+                </div>
                     <p>{computers[1].title}</p>
                     <p>{computers[1].price}</p>
                 </div><div className="buttons-div-container">
@@ -23,7 +27,9 @@ function CardUnique({ computers , cart, addToCart}) {
                 </div>
             </div>
             <div key={computers[9].id} className="divv">
-                <img src={computers[9].img} alt="" className="card-image" /><div className="cardunique-text">
+            <div className="div-for-image">
+                    <img src={computers[9].img} alt="" className="card-image" /><div className="cardunique-text">
+                </div>
                     <p>{computers[9].title}</p>
                     <p>{computers[9].price}</p>
                 </div><div className="buttons-div-container">
@@ -32,7 +38,9 @@ function CardUnique({ computers , cart, addToCart}) {
                 </div>
             </div>
             <div key={computers[10].id} className="divv">
-                <img src={computers[10].img} alt="" className="card-image" /><div className="cardunique-text">
+            <div className="div-for-image">
+                    <img src={computers[10].img} alt="" className="card-image" /><div className="cardunique-text">
+                </div>
                     <p>{computers[10].title}</p>
                     <p>{computers[10].price}</p>
                 </div><div className="buttons-div-container">

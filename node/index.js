@@ -3,11 +3,14 @@ const apiRouter = require('./routes/apiRouter')
 const authRouter = require('./routes/authRouter')
 const mysql = require("mysql2");
 const db = require('./db');
+const cors = require('cors')
 
 const PORT = process.env.port || 8000
 const app = express();
 
+
 app.use(express.json())
+app.use(cors())
 app.use('/auth', authRouter)
 app.use('/api', apiRouter)
 

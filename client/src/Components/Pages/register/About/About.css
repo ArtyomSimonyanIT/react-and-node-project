@@ -1,15 +1,17 @@
 .about-container{
     width: 100%;
     display: flex;
+    justify-content: space-around;
     background-color: rgb(255, 238, 238);
     font-family: 'Roboto Mono', monospace;
-    padding-bottom: 70px;
+    padding-bottom: 7vw;
+    margin-bottom: 8.8vw;
 }
 .about-div-1{
-    width: 40%;
-    margin-left: 5%;
+    width: 40vw;
+    /* margin-left: 5%; */
     margin-top: 10%;
-    padding-bottom: 50px;
+    padding-bottom: 2vw;
     /* text-align: center; */
     background-color: rgb(41, 41, 41);   
     border-radius: 10px;
@@ -20,7 +22,7 @@
 }
 .about-text{
     width: 70%;
-    /* text-align: center; */
+    text-align: left;
     margin: 0 auto;
     color: aliceblue;
 }
@@ -29,13 +31,12 @@
     /* text-align: center; */
 }
 .about-div-2{
-    width: 40%;
-    margin-left: 10%;
-    margin-top: 10%;
+    width: 40vw;
+    margin-top: 10vw;
     /* padding-bottom: 50px; */
     /* text-align: center; */
     border-radius: 10px;
-    padding: 30px;
+    padding: 3vw;
     background-color: rgb(196, 196, 196);
 }
 .delivery-container{
@@ -52,6 +53,7 @@
     color: aliceblue;
     display: flex;
     justify-content: space-between;
+    margin-top: 0.5vw;
 }
 .div-for-truck{
     margin-top: 24%;
@@ -77,4 +79,8 @@
     background-color: rgb(41, 41, 41);   
     border-radius: 10px;
     width: 75%;
+}
+
+h1{
+    font-size: 2.3vw;
 }

@@ -6,8 +6,11 @@
 }
 .ppp{
     font-family: 'Roboto Mono', monospace;
-    /* font-size: 18px; */
+    font-size: 1.3vw;
     color: black;
+}
+.h1-for-body{
+    font-size: 4vw;
 }
 .card-container{
     width: 80%;

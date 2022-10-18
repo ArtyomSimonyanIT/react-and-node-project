@@ -7,7 +7,7 @@ function Body({ computers, cart, addToCart}) {
     return (
         <div>
             <div className="text-container">
-                <h1>ONLINE SHOP</h1>
+                <h1 className="h1-for-body">ONLINE SHOP</h1>
                 <p className="ppp">In this shop you can buy computers and notebooks at low prices and sales</p>
             </div>
             <Slider />

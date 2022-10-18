@@ -30,30 +30,28 @@ function About() {
             </div>
             <div className="about-div-2">
                 <div className="delivery-container">
-                    
+
                     <div className="delivery-div1">
                         <div className="div-for-truck"><i className="fa-solid fa-truck"></i></div>
                         <div className="div-for-div1"><h1 className="about-h1" style={{ color: "#4f4f4f" }}>DELIVERY</h1>
-                        <p style={{ width: "80%", margin: "0 auto", paddingBottom: "50px" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nam enim fugit excepturi libero minima pariatur earum quae. Incidunt commodi
-                            repellat numquam velit laboriosam esse quae id, provident, dolor ut vel?Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit. Eligendi facere
-                            qui in aspernatur ea unde cum beatae similique atque!</p></div>
-                        
+                            <p style={{ width: "80%", margin: "0 auto", paddingBottom: "50px" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Nam enim fugit excepturi libero minima pariatur earum quae. Incidunt commodi
+                                repellat numquam velit laboriosam esse quae id, provident, dolor ut vel?Lorem ipsum dolor sit
+                                amet, consectetur adipisicing elit. Eligendi facere
+                                qui in aspernatur ea unde cum beatae similique atque!</p></div>
+
                     </div>
                     <div className="delivery-div2">
                         <div className="div-for-truck"><i className="fa-solid fa-address-book"></i></div>
                         <div className="div-for-div1"><h1 className="about-h1" style={{ color: "#4f4f4f" }}>CONTACT</h1>
-                        <p style={{ width: "80%", margin: "0 auto", paddingBottom: "50px" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nam enim fugit excepturi libero minima pariatur earum quae. Incidunt commodi
-                            repellat numquam velit laboriosam esse quae id, provident, dolor ut vel?Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit. Eligendi facere
-                            qui in aspernatur ea unde cum beatae similique atque!</p></div>
-                        
+                            <p style={{ width: "80%", margin: "0 auto", paddingBottom: "50px" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Nam enim fugit excepturi libero minima pariatur earum quae. Incidunt commodi
+                                repellat numquam velit laboriosam esse quae id, provident, dolor ut vel?Lorem ipsum dolor sit
+                                amet, consectetur adipisicing elit. Eligendi facere
+                                qui in aspernatur ea unde cum beatae similique atque!</p></div>
                     </div>
                 </div>
                 <div>
-
                 </div>
             </div>
         </div>

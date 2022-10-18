@@ -1,6 +1,6 @@
 .header{
     display: flex;
-    height: 50px;
+    height: 3.3vw;
     width: 100%;
     box-shadow: 0 4px 12px 0 rgb(0 0 0 / 7%), 0 2px 4px rgb(0 0 0 / 5%);
     align-items: center;
@@ -9,7 +9,8 @@
     background-color: white;
     display: flex;
     justify-content: space-between;
-    
+    z-index: 1;
+    font-size: 1.3vw;
 }
 
 .header-div-container{
@@ -33,7 +34,7 @@
     justify-content: space-evenly;
 }
 .mard{
-    font-size: 22px;
+    font-size: 1.75vw;
     transition: 1s;
     color: #4F4F4F;
 }
@@ -41,15 +42,15 @@
     color: rgb(0, 0, 0);
 }
 .register-button{
-    width: 110px;
+    width: 8vw;
     border: none;
     background-color: #4F4F4F;
-    height: 30px;
+    height: 2vw;
     text-align: center;
     cursor: pointer;
     color: white;
     transition: 1s;
-    font-size: 15.4px;
+    font-size: 1.15vw;
 }
 .register-button:hover{
     background-color: rgb(0, 0, 0);

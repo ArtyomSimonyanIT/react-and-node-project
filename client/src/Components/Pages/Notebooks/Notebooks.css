@@ -1,5 +1,5 @@
 .divv1{
-    width: 25.5%;
+    width: 21%;
     margin-bottom: 70px;
     background-color: #eeeeee;
     border-bottom-left-radius: 30px;
@@ -17,4 +17,9 @@
     padding-top: 50px;
     flex-wrap: wrap;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+.card-image{
+    height: 19vw;
+    margin-top: 1vw;
+    margin-left: 0.98vw;
 }

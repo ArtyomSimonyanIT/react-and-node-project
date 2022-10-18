@@ -1,5 +1,5 @@
 .cart-container {
-    width: 70%;
+    width: 62vw;
     margin: 0 auto;
     overflow: hidden;
     display: flex;
@@ -15,16 +15,16 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 .divv2{
-    width: 35%;
-    margin-bottom: 70px;
+    width: 21vw;
+    margin-bottom: 3vw;
     background-color: #eeeeee;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 1.3vw;
+    border-bottom-right-radius: 1.3vw;
 }
 .card-image1{
-    width: 90%;
-    height: 280px;
-    padding-left: 5%;
+    /* width: 90%; */
+    height: 19vw;
+    padding-left: 1vw;
     padding-top: 5%;
 }
 .div-for-h1{
@@ -34,14 +34,14 @@
 }
 .cart-div-for-h1{
     margin-top: 100px;
-    font-size: 40px;
+    font-size: 4.3vw;
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
 .cart-diiv{
     margin: 0 auto;
-    width: 150px;
+    width: 15vw;
     margin-top: 15px;
-    height: 2px;
+    height: 0.2vw;
     background-color: #4f4f4f;
 }

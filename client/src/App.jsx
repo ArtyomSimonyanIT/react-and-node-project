@@ -1,4 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import axios from "axios";
+import { useEffect } from "react";
+import { useContext } from "react";
 import Body from "./Components/Body/Body";
 import Layouts from "./Components/Pages/Layouts/Layouts";
 import NotebooksPage from "./Components/Pages/Notebooks/NotebooksPage";
@@ -10,10 +13,12 @@ import SignUp from "./Components/Pages/register/SignUp/SignUp";
 import About from "./Components/Pages/register/About/About";
 import Cart from "./Components/Pages/Cart/Cart";
 import { useCallback } from "react";
+import React from "react";
 import "./App.css"
 
 export default function App() {
   const [cart, setCart] = useState([]);
+  const [users, setUsers] = useState();
   const [computers, setComputers] = useState([
     {
       id: 1,
@@ -227,7 +232,13 @@ export default function App() {
       price: "1,640,000 AMD"
     }
   ])
-
+  async function getUsers() {
+    const response = await axios.get(`http://localhost:8000/api/users`);
+    await setUsers(response.data)
+  }
+  useEffect(() => {
+    getUsers()
+  }, [])
   const addToCart = useCallback((product) => {
     const PRODUCT_EXIST = cart.find((item) => item.id === product.id && item.categories === product.categories);
     if (PRODUCT_EXIST) {
@@ -240,7 +251,7 @@ export default function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Layouts cart={cart}/>}>
+          <Route path="/" element={<Layouts cart={cart} />}>
             <Route path="/" element={<Body computers={computers} cart={cart} addToCart={addToCart} />} />
             <Route path="/computers" element={<ComputersPage computers={computers} cart={cart} addToCart={addToCart} />} />
             <Route path="/notebooks" element={<NotebooksPage computers={computers} cart={cart} addToCart={addToCart} />} />
